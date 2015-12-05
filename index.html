@@ -3,49 +3,38 @@
     <head>
         <meta charset="utf-8">
         <title>Прогноз погоди в Україні</title>
+        <!--stylesheet-->
+        <link href="index.css" rel="stylesheet" type="text/css">
     </head>
     
         <body data-pinterest-extension-installed="cr1.39.1">
-            
-    <style>
-  body { background-image: url(/ollllla/website/b.jpg);
-  background-size: 100%;
-  color: #fff;
-        }
-    </style>
+       
+    <body>
+      <div id="wrapper">
+           <img src="/ollllla/website/karta.png" height="100px" width="150px" hspace="80px" alt="karta</karta>">
+      
+      <div id="header">
+            <h1>Прогноз погоди в <a href="http://www.example.com"><font color="#FFD700">Україні</font></a> на
+            <label id="name_date_h1">date</label></h1>
     
-    <header>
-        <img src="images/karta.jpg" align="left" height="80px" width="100px" hspace="80px" alt="karta</karta>">
-        
-        <link rel="stylesheet" href="styles.css" type="text/css">
-        
-        <p id = "header">paint red
-     
-        <h1>Прогноз погоди в <a href="http://www.example.com">Україні</a> на
-            <label id="name_date_h1">date</label></h1></p>
-     </header>
-        
-        <!-- Google Fonts -->
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Playball|Open+Sans+Condensed:300,700" />
-
-        <!--[if lt IE 9]>
-          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-        
-        <form id="formCity">
+     <form div id="formCity">
             <label for="cityName">Mісце:
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA/ElEQVQ4T52SAW0CQRRE3ykABy0O6oCgAKoAqqBFQYsC6oDWASgAB9QB4IAqoJlm9zL777gQNrlc9s/s7J/5W9G+3oAp8JTgNaDvO9KrUOgDWzsY+V/AixejgG4ZX+kqlxfAR964wCNwsMOnRFRXsvSQsDMwAPTHBURamsAI2KW9stgbJhuyUwiorXcjRXsXw2obTpoBKyPNgc+0j9hzmkrRgbwegZ6JKFStidV+AeXVyEAc3fh67xR0rq0L19NkFOj/7THEXIt+XaD23iUgTOMbBiubkMXVDgTEuRfBuXCctWP+Lorne6uAAv1JZI2tdXV1kOevxPOTboj8AY3/LBEarih2AAAAAElFTkSuQmCC"/>
-            
-            
+           
             </label>
             <input id="inputCityName" type="text" name="cityName">
             <input type="button" id="btnGetWeather" value="Get Weather">
-        </form>
+            
+            
+      </form>          
         
         <p><span id="location">cityName </span></p>
-        
-        
-        <table>
+             
+      </div>
+      <div id="content"
+      </div>
+    </body>        
+    <table>
             
             <tr class="week day">
 				  
@@ -91,9 +80,5 @@
 				
       </tbody>
       </table>
-</html>
 
-
-
-</body>
 </html>

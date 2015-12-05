@@ -1,0 +1,29 @@
+element.style {
+    
+}
+
+body {
+    background-image: url("/ollllla/website/background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center-top;
+    background-position-x: 50%;
+    background-position-y: 0%;
+    
+}
+
+#header h1 {
+    text-align: center;
+    font-family:'Droid Sans', sans-serif;
+    font-weight: 400;
+    color:;
+}
+
+#formCity {
+  text-align: left;
+    font-family:'Noto Sans', sans-serif;
+    font-weight: 400;
+    color:;
+    
+}

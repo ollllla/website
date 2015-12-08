@@ -1,5 +1,5 @@
 element.style {
-    
+   
 }
 
 body {
@@ -7,9 +7,10 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-position: center-top;
-    background-position-x: 50%;
-    background-position-y: 0%;
+    border: 5px blue;
+    margin-left: 20px;
+    margin-right: 20px; 
+   
     
 }
 
@@ -17,13 +18,45 @@ body {
     text-align: center;
     font-family:'Droid Sans', sans-serif;
     font-weight: 400;
-    color:;
+    font-size:36px;
+    
 }
 
+     
+
 #formCity {
-  text-align: left;
+    text-align: left;
     font-family:'Noto Sans', sans-serif;
     font-weight: 400;
     color:;
     
 }
+
+#full_content {
+  
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    background-color:rgba(100, 149,	237, 0.3);
+    border-radius: 8px;
+    padding:35px;
+    margin-right:auto;
+    margin-left:auto;
+    border: 1px blue;
+}
+
+     
+ #content_header
+{
+   flex: 1 auto; 
+   color: black;
+   background: rgba(153, 178, 255, 0.3);
+   paddind: 10px;
+   border-radius: 15px;
+   text-align: center;
+   font-family: 'Arimo', sans-serif;
+   font-weight: 600;
+   border: 1px blue;
+  
+}              
+     

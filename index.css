@@ -50,7 +50,7 @@ body {
 {
    flex: 1 auto; 
    color: black;
-   background: rgba(153, 178, 255, 0.3);
+   background: rgba(153, 178, 255, 0.4);
    paddind: 10px;
    border-radius: 15px;
    text-align: center;
@@ -59,4 +59,25 @@ body {
    border: 1px blue;
   
 }              
-     
+   #content_header {
+   display: block;
+   
+    -webkit-transform: 
+    transform: scale(1,2);
+    -webkit-transition-timing-function:
+    -webkit-transition-duration: 550ms; 
+    -moz-transform: scale(1,2); 
+    -moz-transition-timing-function: 
+    -moz-transition-duration: 550ms;
+
+       
+   } 
+
+    #content_header:hover {
+  
+    -webkit-transform: scale(1.11,1.45); 
+    -webkit-transition-timing-function: 
+    -webkit-transition-duration:550ms; 
+    -moz-transform: scale(1.11,1.45); 
+    -moz-transition-duration: 550ms;
+}  

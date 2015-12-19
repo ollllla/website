@@ -4,7 +4,7 @@ element.style {
 }
 
 body {
-    background-image: url("/ollllla/website/images/background.png");
+    background-image: url("images/background.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -115,7 +115,7 @@ body {
      
  #content_header
 {
-   flex: 5 auto; 
+   flex: 1 auto; 
    color: black;
    background: rgba(153, 178, 255, 0.4);
    paddind: 20px;

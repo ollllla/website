@@ -18,7 +18,7 @@ body {
 
 #clouds {
 	padding: 10px 0;
-    position: top;
+    top: 5px;
 
 }
 .cloud {
@@ -86,7 +86,7 @@ body {
     font-family:'Droid Sans', sans-serif;
     font-weight: 400;
     font-size:36px;
-    
+
 }
 
      
@@ -115,15 +115,15 @@ body {
      
  #content_header
 {
-   flex: 1 auto; 
+   flex: 5 auto; 
    color: black;
    background: rgba(153, 178, 255, 0.4);
-   paddind: 10px;
+   paddind: 20px;
    border-radius: 15px;
    text-align: center;
    font-family: 'Arimo', sans-serif;
    font-weight: 600;
-   border: 1px blue;
+   border: 3px blue;
   
 }              
    #content_header {

@@ -25,12 +25,10 @@ $(function(){
         
          $('#location').html(city + ', <b>' + country + '</b>'); // Додаємо локацію на сторінку
         
-       
-	     
-         
-         $('#iconToday').html('<img src="website/images/'+ data.list[0].weather[0].icon + '.png" alt="Зображення">');
-         $('#iconTomorrow').html('<img src="website/images/'+ data.list[1].weather[0].icon + '.png" alt="Зображення">');
-         $('#iconAfterTomorrow').html('<img src="website/images/'+ data.list[2].weather[0].icon + '.png" alt="Зображення">');
+         $('#iconToday').html('<img src="../images/'+ data.list[0].weather[0].icon + '.png" alt="Зображення">');
+         $('#iconTomorrow').html('<img src="../images/'+ data.list[1].weather[0].icon + '.png" alt="Зображення">');
+         $('#iconAfterTomorrow').html('<img src="../images/'+ data.list[2].weather[0].icon + '.png" alt="Зображення">')
+
          
          $('#tempTodayMin').html(Math.round(data.list[0].temp.min));
          $('#tempTomorrowMin').html(Math.round(data.list[1].temp.min));
@@ -40,7 +38,9 @@ $(function(){
          $('#tempTomorrowMax').html(Math.round(data.list[1].temp.max));
          $('#tempAfterTomorrowMax').html(Math.round(data.list[2].temp.max));
           
-	}          
+	}    
+	
+	
                   
     function showError(msg){
         $('#error').html('Сталася помилка: ' + msg);

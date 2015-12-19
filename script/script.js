@@ -13,7 +13,7 @@ $(function(){
         }
     });    
     
-       getWeatherData('ua', dataReceived, showError);
+        getWeatherData('ua', dataReceived, showError);
     
 
     function dataReceived(data) {
@@ -28,9 +28,9 @@ $(function(){
        
 	     
          
-         $('#iconToday').html('<img src="/ollllla/website/images/'+ data.list[0].weather[0].icon + '.png" alt="Зображення">');
-         $('#iconTomorrow').html('<img src="/ollllla/website/images/'+ data.list[1].weather[0].icon + '.png" alt="Зображення">');
-         $('#iconAfterTomorrow').html('<img src="/ollllla/website/images/'+ data.list[2].weather[0].icon + '.png" alt="Зображення">');
+         $('#iconToday').html('<img src="website/images/'+ data.list[0].weather[0].icon + '.png" alt="Зображення">');
+         $('#iconTomorrow').html('<img src="website/images/'+ data.list[1].weather[0].icon + '.png" alt="Зображення">');
+         $('#iconAfterTomorrow').html('<img src="website/images/'+ data.list[2].weather[0].icon + '.png" alt="Зображення">');
          
          $('#tempTodayMin').html(Math.round(data.list[0].temp.min));
          $('#tempTomorrowMin').html(Math.round(data.list[1].temp.min));

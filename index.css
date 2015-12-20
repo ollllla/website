@@ -16,58 +16,31 @@ body {
     
 }
 
-#clouds {
-	padding: 10px 0;
+#cloud {
+	padding: 5px 0;
     top: 5px;
-
-}
-.cloud {
 	position: relative; 
-}
- 
-.cloud:before {
-  position: absolute; 
-	top: -15px; 
-	left: 10px;
-	}
- 
-.cloud:after {
-	position: auto; 
-	right: 15px;
+    -webkit-animation-name: moveclouds;
+    -webkit-animation-duration:35s;
+    -webkit-animation--iteration-count:linear infinite;
+    
+    animation-name: moveclouds;
+    animation-duration:35s;
+    animation-iteration-count:linear infinite;
+
+    -webkit-animation: moveclouds 35s linear infinite;
+	-moz-animation: moveclouds 35s linear infinite;
+	-o-animation: moveclouds 35s linear infinite;
 }
 
-.cloud1 {
-	-webkit-animation: moveclouds 65s linear infinite;
-	-moz-animation: moveclouds 65s linear infinite;
-	-o-animation: moveclouds 65s linear infinite;
+@keyframes moveclouds {
+    0% {margin-left: 900px;}
+	100% {margin-left: -900px;}
 }
- 
-
-.cloud2 {
-	left: 200px;
-	
-	-webkit-animation: moveclouds 75s linear infinite;
-	-moz-animation: moveclouds 75s linear infinite;
-	-o-animation: moveclouds 75s linear infinite;
+    
 }
- 
-.cloud3 {
-	left: -500px; 
-	top: -100px;
-	
-  -webkit-animation: moveclouds 85s linear infinite;
-	-moz-animation: moveclouds 85s linear infinite;
-	-o-animation: moveclouds 85s linear infinite;
-}
-.cloud4 {
-	
-	-webkit-animation: moveclouds 45s linear infinite;
-	-moz-animation: moveclouds 45s linear infinite;
-	-o-animation: moveclouds 45s linear infinite;
-
-}
-
 @-webkit-keyframes moveclouds {
+
 	0% {margin-left: 900px;}
 	100% {margin-left: -900px;}
 }
@@ -148,3 +121,5 @@ body {
     -moz-transform: scale(1.11,1.45); 
     -moz-transition-duration: 550ms;
 }  
+Status API Training Shop Blog About Pricing
+© 2015 GitHub, Inc. Terms Privacy Security C

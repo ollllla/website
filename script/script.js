@@ -12,9 +12,8 @@ var moment = window.moment;
          }
      });    
      
-	// Тимчасово закоментовано, видає помилку
-	// Потрібно розібратися з геолокацією
-    //var weatherData = getWeatherData('ua', dataReceived, showError);
+	
+    var weatherData = getWeatherData('ua', dataReceived, showError);
      
  
     function dataReceived(data) {

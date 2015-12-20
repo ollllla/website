@@ -23,33 +23,14 @@ getWeatherByCity(dataReceived, showError, cityName);
            var localTime = new Date(this.dt*1000 - offset);
            
            addWeather (
-            var now = moment(localTime);
-            moment.lang ('uk');
+           var now = moment(localTime);
+           moment.lang ('uk');
            moment(now.format('LLL')),
             
-            this.weather[0].icon,
-            Math.round(this.temp.min) + '&deg;C',
-            Math.round(this.temp.max) + '&deg;C'
-                  
-                  );
-          });   
-          
-          $('#location').html(city + ', <b>' + country + '</b>'); // Додаємо локацію на сторінку
-          
-     }
-     
-     function addWeather(icon, day,temp) {
-      
-      var weather =
-     '<p>'+''<ul>'+'<span id="date">+day+</span>'+</ul>+
-      '<ul>'+'<span id="icon"> + '<img src="images/'+icon+'.png" />' + </span>'+'</ul>'+
-      '<ul>'+'<span id="tempMin">+temp.min+</span>'+'</ul>'+
-      '<ul>'+'<span id="tempMax">+temp.max+</span>'+'</ul>'+'</p>';
-      
-     }
+           
       
      
-	         $('#dateToday').html(moment(new Date(data.list[0].dt*1000-offset).calendar());
+	         $('#dateToday').html(moment(new Date(data.list[0].dt*1000-offset).lang('uk').format('LLL')));
           $('#dateTomorrow').html(data.list[1].dt);
           $('#dateAfterTomorrow').html(data.list[2].dt);
       

@@ -11,24 +11,29 @@
        
     
             <div id="wrapper">
-                <img src="images/karta.png" height="150px" width="250px" hspace="80px" margin top="40px" alt="logo">
-            <div id="cloud">    
-                <img src="images/cloud3.png" height="250px" width="750 px" hspace="80px" alt="cloud3">
+                <img src="images/karta.png" height="150px" width="350px" hspace="80px" margin top="10px" alt="logo">
+            <div id="clouds">    
+                <img src="images/cloud3.png" height="200px" width="650 px" hspace="80px" margin top="10px" alt="cloud3">
+               // <img src="images/cloud4.png" height="40px" width="350px">
             </div>
-            </div>    
+            <div id="cloud6">
+                 <img src="images/cloud6.png" height="150px" width="350px">
+            </div>
+            </div>
+            
             <div id="header">
-                
-            <h1>Прогноз погоди в <font color="#FFD700">Україні.</font></h1>
+                <h1>Прогноз погоди в <font color="#FFD700">Україні.</font></h1>
             </div>
     
-     <form div id="formCity">
+    <form>
+        <div id="formCity">
             <label for="cityName">Mісце: 
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA/ElEQVQ4T52SAW0CQRRE3ykABy0O6oCgAKoAqqBFQYsC6oDWASgAB9QB4IAqoJlm9zL777gQNrlc9s/s7J/5W9G+3oAp8JTgNaDvO9KrUOgDWzsY+V/AixejgG4ZX+kqlxfAR964wCNwsMOnRFRXsvSQsDMwAPTHBURamsAI2KW9stgbJhuyUwiorXcjRXsXw2obTpoBKyPNgc+0j9hzmkrRgbwegZ6JKFStidV+AeXVyEAc3fh67xR0rq0L19NkFOj/7THEXIt+XaD23iUgTOMbBiubkMXVDgTEuRfBuXCctWP+Lorne6uAAv1JZI2tdXV1kOevxPOTboj8AY3/LBEarih2AAAAAElFTkSuQmCC"/>
             </label>
             
             <input id= "inputCityName" type="text" name="cityName"/>
             <input type="button" id="btnGetWeather" value="Пошук"/>
-            
+        </div>    
              
        </form> 
              <p><span id="location">cityName </span></p>
@@ -87,13 +92,14 @@
 
 <p id="error"></p>
 
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
-        <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.js"></script>
-        <script type="text/javascript" src="script/script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script type="text/javascript" src="script/moment.js"></script>
         <script type="text/javascript" src="script/WeatherService.js"></script>
         <script type="text/javascript" src="script/WeatherByCity.js"></script>
         <script type="text/javascript" src="script/moment-with-locales.min.js"></script>
+		<script type="text/javascript" src="script/script.js"></script>
+        
+    </body>        
         
     </body>        
     </html>

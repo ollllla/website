@@ -16,21 +16,21 @@ body {
     
 }
 
-#cloud {
+#clouds {
 	padding: 5px 0;
     top: 5px;
 	position: relative; 
     -webkit-animation-name: moveclouds;
-    -webkit-animation-duration:35s;
+    -webkit-animation-duration:65s;
     -webkit-animation--iteration-count:linear infinite;
     
     animation-name: moveclouds;
-    animation-duration:35s;
+    animation-duration:65s;
     animation-iteration-count:linear infinite;
 
-    -webkit-animation: moveclouds 35s linear infinite;
-	-moz-animation: moveclouds 35s linear infinite;
-	-o-animation: moveclouds 35s linear infinite;
+    -webkit-animation: moveclouds 65s linear infinite;
+	-moz-animation: moveclouds 65s linear infinite;
+	-o-animation: moveclouds 65s linear infinite;
 }
 
 @keyframes moveclouds {
@@ -53,6 +53,48 @@ body {
 	100% {margin-left: -900px;}
 }
 
+#cloud6 {
+    
+	padding: 0 px;
+    top: 5px;
+	position: relative; 
+    -webkit-animation-name: movecloud6;
+    -webkit-animation-duration:100s;
+    -webkit-animation-iteration-count:linear infinite;
+    -webkit-animation-delay:10s;
+    
+    animation-name: movecloud6;
+    animation-duration:100s;
+    animation-iteration-count:linear infinite;
+    animation-delay:10s;
+   
+
+    -webkit-animation: moveclouds 100s linear infinite;
+	-moz-animation: moveclouds 100s linear infinite;
+	-o-animation: moveclouds 100s linear infinite;
+}
+
+@keyframes movecloud6 {
+    0% {margin-left: 900px;}
+	100% {margin-left: -900px;}
+}
+    
+}
+@-webkit-keyframes movecloud6 {
+
+	0% {margin-left: 900px;}
+	100% {margin-left: -900px;}
+}
+@-moz-keyframes movecloud6 {
+	0% {margin-left: 900px;}
+	100% {margin-left: -900px;}
+}
+@-o-keyframes movecloud6 {
+	0% {margin-left: 900px;}
+	100% {margin-left: -900px;}
+
+}
+
 
 #header h1 {
     text-align: center;
@@ -65,6 +107,7 @@ body {
      
 
 #formCity {
+    position:top-right;
     text-align: left;
     font-family:'Noto Sans', sans-serif;
     font-weight: 400;
@@ -79,9 +122,10 @@ body {
     flex-wrap: wrap;
     background-color:rgba(100, 149,	237, 0.3);
     border-radius: 8px;
-    padding:35px;
+    padding:55px;
     margin-right:auto;
     margin-left:auto;
+    margin-bottom:20px;
     border: 1px blue;
 }
 
@@ -121,5 +165,3 @@ body {
     -moz-transform: scale(1.11,1.45); 
     -moz-transition-duration: 550ms;
 }  
-Status API Training Shop Blog About Pricing
-© 2015 GitHub, Inc. Terms Privacy Security C

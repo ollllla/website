@@ -55,3 +55,4 @@ $(function(){
      function showError(msg){
           $('#error').html('Сталася помилка: ' + msg);
      }
+});

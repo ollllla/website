@@ -48,11 +48,19 @@ $(function(){
 			$('#tempAfterTomorrowMax').html(Math.round(data.list[2].temp.max));
          });   
  	}         
+ 	function addWeather(date,icon,tempMin,tempMax,i){
+ 	for (var i=3; i<=6;i++)
  	
- 	
- 	
-                    
+ 	    
+ 	    $('#date'+i).html(moment(data.list[i].dt*1000).locale('uk').format('LLL'));
+ 	    $('#icon'+i).html('<img src="images/'+ data.list[0].weather[+i].icon + '.png" alt="Зображення">');
+ 	    $('#tempMin'+i).html(Math.round(data.list[i].temp.min));
+ 	    $('#tempMax'+i).html(Math.round(data.list[i].temp.max));
+ 	    
+ 	    
+ 	    }
+ 	    
+});
      function showError(msg){
           $('#error').html('Сталася помилка: ' + msg);
      }
-});

@@ -1,6 +1,5 @@
 element.style {
-    within 980px;
-   
+    
 }
 
 body {
@@ -11,9 +10,9 @@ body {
     border: 5px blue;
     margin-left: 40px;
     margin-right: 40px; 
-    margin-bottom:100px;
     margin-top:20px;
-    overflow: hidden;
+    overflow:hidden;
+   
    
     
 }
@@ -84,8 +83,10 @@ body {
     padding:55px;
     margin-right:auto;
     margin-left:auto;
-    margin-bottom:20px;
-    border: 1px blue;
+    border: 5px blue;
+    position:absolute;
+    bottom:20px;
+    
    
 }
 
@@ -101,6 +102,8 @@ body {
    font-family: 'Arimo', sans-serif;
    font-weight: 600;
    border: 3px blue;
+ 
+  
   
 }              
    #content_header {
@@ -126,7 +129,7 @@ body {
     -moz-transition-duration: 550ms;
 }  
 
-*icon {
+#icon {
     width:120px;
     height:120px;
 }

@@ -1,4 +1,4 @@
-// JavaScript File
+
 function getWeatherData(lang, fnOK, fnError) {
       navigator.geolocation.getCurrentPosition(locSuccess, locError);
 
@@ -12,7 +12,7 @@ function getWeatherData(lang, fnOK, fnError) {
         } else {
             $.getJSON(
                 'http://api.openweathermap.org/data/2.5/forecast/daily?lat=' + position.coords.latitude + '&lon=' +
-                position.coords.longitude + '&cnt=3&units=metric&APPID=dd1b5adf11309defd12e273e2d0732a2' + '&lang=ua&callback=?',
+                position.coords.longitude + '&cnt=7&units=metric&APPID=dd1b5adf11309defd12e273e2d0732a2' + '&lang=ua&callback=?',
                 function (response) {
                     // Store the cache
                     localStorage.weatherCache = JSON.stringify({

@@ -126,9 +126,9 @@ body {
     -moz-transition-duration: 550ms;
 }  
 
-#icon {
-    width:50px;
-    height:50;
+*icon {
+    width:120px;
+    height:120px;
 }
 
 #clouds {

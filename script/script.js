@@ -47,7 +47,7 @@ $(function(){
 			$('#tempTomorrowMax').html(Math.round(data.list[1].temp.max));
 			$('#tempAfterTomorrowMax').html(Math.round(data.list[2].temp.max));
          });   
- 	}         
+ 	}  //       
  	function addWeather(date,icon,tempMin,tempMax,i){
  	for (var i=3; i<=6;i++)
  	
@@ -58,7 +58,7 @@ $(function(){
  	    $('#tempMax'+i).html(Math.round(data.list[i].temp.max));
  	    
  	    
- 	    }
+ 	    }// тимчасово выдкл
  	    
 });
      function showError(msg){

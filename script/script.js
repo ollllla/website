@@ -1,16 +1,19 @@
-var moment = window.moment;
-	$('#btnGetWeather').click(function (){
-		getWeatherByCity(dataReceived, showError,  $('#inputCityName').val());
-	});
-
-     $('#inputCityName').keypress(function(e) {
-         var ENTER_KEY_CODE = 13;
-         if ( e.which === ENTER_KEY_CODE ) 
-         {
-             $('#btnGetWeather').trigger('click');
-             return false;
-         }
-     });    
+$(function(){
+    $('#btnGetWeather').click(function () {
+       var cityName = $('#inputCityName').val();
+       console.log(cityName);
+       getWeatherByCity(dataReceived, showError, cityName);
+    });
+    $('#inputCityName').keypress(function(e) {
+        var ENTER_KEY_CODE = 13;
+        if ( e.which === ENTER_KEY_CODE ) 
+        {
+            $('#btnGetWeather').trigger('click');
+            return false;
+        }
+    });    
+  
+       getWeatherData('ua', dataReceived, showError);
      
 	
     var weatherData = getWeatherData('ua', dataReceived, showError);
@@ -22,6 +25,7 @@ var moment = window.moment;
         var country = data.city.country;
         $('#city').html(city);  
         $('#content_header:not(:first)').remove();
+        $('#location').html(city + ', <b>' + country + '</b>');
         
         $.each(data.list, function(){
 			var localTime = new Date(this.dt*1000);
@@ -50,4 +54,4 @@ var moment = window.moment;
                     
      function showError(msg){
           $('#error').html('Сталася помилка: ' + msg);
-     }
+     }g

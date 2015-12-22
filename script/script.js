@@ -48,7 +48,7 @@ $(function(){
 			$('#tempAfterTomorrowMax').html(Math.round(data.list[2].temp.max));
          });   
  	}  //       
- 	function addWeather(date){
+ 	function addWeather(){
  	for (var i=3; i<=6;i++)
  	
  	    

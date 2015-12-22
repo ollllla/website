@@ -1,4 +1,4 @@
-// JavaScript File
+
 
 function getWeatherByCity( fnOK, fnError, cityName) {
    
